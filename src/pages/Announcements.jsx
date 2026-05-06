@@ -1,0 +1,1 @@
+export default ()=> <div className='space-y-4'><div className='glass p-4'>📌 Pinned: Demo Day rehearsal on May 10.</div><div className='glass p-4'>Company town hall at 4PM Friday.</div><div className='glass p-4'>Deadline alert: Midterm evaluations due in 2 days.</div></div>;

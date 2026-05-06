@@ -1,0 +1,3 @@
+import { Bell, Search, Moon } from 'lucide-react';
+import NotificationDropdown from './NotificationDropdown';
+export default function Navbar(){return <header className='sticky top-0 z-20 px-4 py-3 bg-surface/80 backdrop-blur border-b border-border flex items-center justify-between gap-3'><div className='flex items-center gap-2 glass px-3 py-2 flex-1 max-w-xl'><Search size={16}/><input className='bg-transparent outline-none text-sm w-full' placeholder='Search interns, projects, tasks...' /></div><div className='flex items-center gap-3'><button className='glass p-2'><Moon size={16}/></button><NotificationDropdown /><button className='glass px-3 py-2 text-sm'>AB</button></div></header>}
