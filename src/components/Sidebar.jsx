@@ -1,0 +1,4 @@
+import { NavLink } from 'react-router-dom';
+import { LayoutDashboard, Users, FolderKanban, ListChecks, CalendarCheck, BarChart3, Award, Megaphone, Settings } from 'lucide-react';
+const items = [['/dashboard','Dashboard',LayoutDashboard],['/interns','Interns',Users],['/projects','Projects',FolderKanban],['/tasks','Tasks',ListChecks],['/attendance','Attendance',CalendarCheck],['/analytics','Analytics',BarChart3],['/certificates','Certificates',Award],['/announcements','Announcements',Megaphone],['/settings','Settings',Settings]];
+export default function Sidebar(){return <aside className='w-64 p-4 hidden md:block'>{items.map(([to,label,Icon])=><NavLink key={to} to={to} className={({isActive})=>`flex items-center gap-3 px-4 py-3 mb-2 rounded-xl ${isActive?'bg-white/10':'hover:bg-white/5'}`}><Icon size={18}/>{label}</NavLink>)}</aside>}
