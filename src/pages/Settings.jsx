@@ -1,0 +1,1 @@
+export default ()=> <div className='grid md:grid-cols-2 gap-4'><div className='glass p-4'>Theme customization, dark/light and density controls.</div><div className='glass p-4'>Notification preferences, profile, and team settings.</div></div>;
